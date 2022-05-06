@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+        }
+        p#solo{
+            font: bolder 20px Arial;
+            background-color: rgb(114, 84, 84);
+            padding: 10px;
+        }
+        input#txtp {
+            color: brown;
+            background-color: rgba(161, 192, 169, 0.541);
+        }
+        input#sola{
+            color: blueviolet;
+        }
+
+    </style>
+    </head>
+    <body>
+        <h1>Identificador de Nacionalidade</h1>
+        <p id="solo">Digite aqui seu Pais:</p> <input type="text" name="txtp" id="txtp">
+        <input type="button" value="VERIFICAR" onclick="verificar()" id="sola">
+        <div id="res">
+
+        </div>
+        <script>
+            function verificar (){
+                var pais = window.document.querySelector('input#txtp')
+                
+                var res = window.document.querySelector('div#res')
+                var nacionalidade = String(pais.value)
+                res.innerHTML = `<p>Atualmente vc vive no ${nacionalidade}. </p>`
+
+                if (nacionalidade == 'Brasil') {
+                    res.innerHTML += `<p>vc é  Brasileiro</p>`
+                } else {
+                    res.innerHTML += `<p> estrangeiro</p>`
+                }
+            }
+        </script>
+    </body>
+    </html>
