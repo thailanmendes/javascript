@@ -1,6 +1,7 @@
 let num = [5, 8, 2, 9, 3]
+num.shift() // tira o primeiro elemento
 num.sort() // coloca os elementos em ordem crescente
-num.push(1) // adicionei o elemento 1 na ultima posição
+num.push(11) // adicionei o elemento 1 na ultima posição
 console.log(num) 
 console.log(`o vetor tem  ${num.length} posições`)
 console.log(`O primeiro valor do vetor é ${num[0]}`)
