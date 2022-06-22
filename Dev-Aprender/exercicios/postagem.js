@@ -11,6 +11,7 @@ comentários
 estarAoVivo
 */
 
+/*
 let postagem = {
     titulo: 'a',
     mensagem: 'b',
@@ -20,7 +21,23 @@ let postagem = {
         {autor: 'a', mensagem: 'b'},
         {autor: 'a', mensagem: 'b'}
     ],
-    estarAoVivo: true
+    estarAoVivo: true 
 }
 
+
+console.log(postagem)*/
+
+
+
+//Constructor Functions
+function Postagem(titulo,mensagem,autor){
+    this.titulo = titulo,
+    this.mensagem = mensagem,
+    this.autor = autor,
+    this.vizualizacoes = 0,
+    this.comentarios =[],
+    this.estarAoVivo = false
+}
+
+let postagem = new Postagem('a','b','c')
 console.log(postagem)
