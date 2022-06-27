@@ -80,4 +80,24 @@ console.log(marca)
 console.log(marca)*/
 
 
+//Combinando e cortando ARRAYS
+const primeiroArray = [1,2,3]
+const segundoArray = [4,5,6]
+
+//Combinar array - método concat
+const combinado = primeiroArray.concat(segundoArray)
+console.log(combinado)
+
+//Dividir - método slice
+const cortado = combinado.slice(1,3) //do índice 1 ate o índice 2
+console.log(cortado)
+
+// Operador Spread 
+const spread = [...primeiroArray,'%',...segundoArray]
+console.log(spread)
+
+const clone = [...spread]
+console.log(clone)
+
+
 
