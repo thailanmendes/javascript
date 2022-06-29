@@ -25,3 +25,6 @@ for (let indice in cores){ //in = buscar informação
 for(let cor of cores){
     console.log(cor)
 }
+
+//forEach
+cores.forEach((cor,indice)=> console.log(cor,indice))
