@@ -99,5 +99,13 @@ console.log(spread)
 const clone = [...spread]
 console.log(clone)
 
+//combinando array metodo join 
+const resul = combinado.join('..')  //combina array colocando qualquer caracteres 
+console.log(resul)
+const frase = 'Ola Bem vindo ao curso'
+const resfrase = frase.split(' ') //ajuda a combinar frases
+console.log(resfrase)
+
+console.log(resfrase.join('-'))
 
 
