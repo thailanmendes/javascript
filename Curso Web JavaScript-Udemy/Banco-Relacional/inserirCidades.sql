@@ -21,13 +21,9 @@ VALUES ('Juazeiro do Norte', 248.2, (select id from estados where sigla = 'CE'))
 select * from cidades
 
 
-
-
-
-
-
 UPDATE estados
-set id = (10)
-where sigla = ('GO')
+set estados = (24)
+where sigla = ('TO')
+
 
 select * from estados
