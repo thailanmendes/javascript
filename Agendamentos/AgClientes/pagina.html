@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Agendamento de Clientes</h1>
+    <label for="clientName">Nome do Cliente:</label>
+    <input type="text" id="clientName" placeholder="Digite o nome do cliente">
+    <label for="appointmentDate">Data do Agendamento:</label>
+    <input type="date" id="appointmentDate">
+    <button onclick="scheduleAppointment()">Agendar</button>
+    <ul id="appointmentList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
